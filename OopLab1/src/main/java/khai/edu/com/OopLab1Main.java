@@ -9,41 +9,48 @@ public class OopLab1Main {
         abc.setName(sc.next());
         System.out.println(abc.name + " " + abc.instrumentType);
         Instrument ins = new Instrument();
+        Plucked pluck = new Plucked();
+        pluck.setName(sc.next());
+        System.out.println(pluck.name);
         System.out.println(ins.name);
+        PercussionStringed perc = new PercussionStringed();
+        perc.setName(sc.next());
+        System.out.println(perc.instrumentType + " " + perc.name + " " + perc.stringedType);
     }
-}
 
-    class Instrument{
+
+    static class Instrument {
         String name;
         String instrumentType = "Default";
 
-        protected void setName(String name){
+        protected void setName(String name) {
             this.name = name;
         }
     }
 
-    class Stringed extends Instrument{
+    static class Wind extends Instrument {
+        String instrumentType = "Wind Instrument";
+        String windType = "Default type";
+    }
+
+    static class Drums extends  Instrument{
+        String instrumentType = "Drum instrument";
+    }
+
+    static class Stringed extends Instrument {
         String instrumentType = "Stringed Instrument";
         String stringedType = "Default";
     }
 
-    class Plucked extends Stringed{
-       String stringedType = "Plucked";
+    static class Plucked extends Stringed {
+        String stringedType = "Plucked";
     }
 
-    class Bowed extends Stringed{
+    static class Bowed extends Stringed {
         String stringedType = "Bowed";
     }
 
-    class Wind extends Instrument{
-        String instrumentType = "Wind Instrument";
-        String windType = "Wind type";
+    static class PercussionStringed extends Stringed{
+        String stringedType = "Percussion";
     }
-
-    class Copper extends Wind{
-        String windType = "Copper wind instrument";
-    }
-
-    class Wood extends Wind{
-        String windType = "Wood wind instrument";
-    }
+}
