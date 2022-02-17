@@ -11,6 +11,7 @@
     <modules>
         <module>OopLab1</module>
         <module>OopLab2</module>
+        <module>OopLab3</module>
     </modules>
 
     <properties>
