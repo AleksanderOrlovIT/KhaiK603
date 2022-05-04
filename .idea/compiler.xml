@@ -9,12 +9,15 @@
         <module name="OopLab1" />
         <module name="OopLab2" />
         <module name="OopLab3" />
+        <module name="Ooplab4" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="OopLab1" options="" />
+      <module name="OopLab3" options="" />
+      <module name="Ooplab4" options="--add-modules java.base" />
     </option>
   </component>
 </project>
