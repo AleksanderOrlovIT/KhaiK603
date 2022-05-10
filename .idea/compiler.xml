@@ -10,14 +10,22 @@
         <module name="OopLab2" />
         <module name="OopLab3" />
         <module name="Ooplab4" />
+        <module name="OopLab5" />
+        <module name="OopLab6" />
+        <module name="OopLab7" />
+        <module name="OopLab8" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="OopLab7" target="17" />
+      <module name="untitled" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="OopLab1" options="" />
       <module name="OopLab3" options="" />
-      <module name="Ooplab4" options="--add-modules java.base" />
+      <module name="Ooplab4" options="" />
     </option>
   </component>
 </project>
